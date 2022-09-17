@@ -1,8 +1,8 @@
 const rangeInput = document.querySelector("#font-size-control");
-const textSpan = document.querySelector("#text");
+const textOutput = document.querySelector("#text");
 
-const rangeControl = (evt) => {
-  textSpan.style.fontSize = `${evt.currentTarget.value}px`;
+const rangeToFontSize = (evt) => {
+  textOutput.style.fontSize = `${evt.currentTarget.value}px`;
 };
 
-rangeInput.addEventListener("input", rangeControl);
+rangeInput.addEventListener("input", rangeToFontSize);
