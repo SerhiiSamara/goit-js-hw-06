@@ -24,11 +24,8 @@ function createBoxes() {
   size = 30;
   for (let i = 1; i <= amount; i += 1) {
     let color = getRandomHexColor();
-    boxes.insertAdjacentHTML(
-      "beforeend",
-      `<div class="element-color${i}" ></div>`
-    );
-    const elementDiv = document.querySelector(`.element-color${i}`);
+    boxes.insertAdjacentHTML("beforeend", `<div class="element${i}" ></div>`);
+    const elementDiv = document.querySelector(`.element${i}`);
     elementDiv.style.backgroundColor = color;
     elementDiv.style.width = `${size}px`;
     elementDiv.style.height = `${size}px`;
@@ -43,7 +40,7 @@ function destroyBoxes() {
   }
 
   for (let i = amount; i > 0; i -= 1) {
-    const elementDiv = document.querySelector(`.element-color${i}`);
+    const elementDiv = document.querySelector(`.element${i}`);
     elementDiv.remove();
   }
   size = 0;
