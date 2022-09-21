@@ -35,7 +35,7 @@ function createBoxes() {
 
 function destroyBoxes() {
   if (size === 0) {
-    alert("Creat square");
+    alert("Creat squares");
     return;
   }
 
