@@ -12,6 +12,5 @@ const arrTag = ingredients.map((ingredient) => {
   liItem.classList.add("item");
   return liItem;
 });
-console.log(arrTag);
 const listWithId = document.querySelector("#ingredients");
 listWithId.append(...arrTag);
