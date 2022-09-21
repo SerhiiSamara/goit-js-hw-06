@@ -9,7 +9,6 @@ function getRandomHexColor() {
 }
 
 function changeColor() {
-  const codeColor = getRandomHexColor();
-  body.style.backgroundColor = codeColor;
-  span.textContent = codeColor;
+  body.style.backgroundColor = getRandomHexColor();
+  span.textContent = getRandomHexColor();
 }

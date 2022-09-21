@@ -4,7 +4,7 @@ const buttonDestroy = document.querySelector("button[data-destroy]");
 const div = document.querySelector("#controls");
 const textInput = div.firstElementChild;
 let amount;
-let size = 0;
+let size;
 
 buttonCreate.addEventListener("click", createBoxes);
 buttonDestroy.addEventListener("click", destroyBoxes);
