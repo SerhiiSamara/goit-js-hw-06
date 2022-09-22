@@ -14,7 +14,7 @@ function getRandomHexColor() {
 }
 
 function createBoxes() {
-  let amount = divEl.firstElementChild.target.value;
+  let amount = divEl.firstElementChild.value;
   size = 30;
   for (let i = 1; i <= amount; i += 1) {
     let color = getRandomHexColor();
@@ -28,7 +28,7 @@ function createBoxes() {
 }
 
 function destroyBoxes() {
-  let amount = divEl.firstElementChild.target.value;
+  let amount = divEl.firstElementChild.value;
   if (size === 0) {
     alert("Creat squares");
     return;
