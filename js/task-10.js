@@ -35,4 +35,6 @@ function destroyBoxes() {
   }
 
   boxes.innerHTML = "";
+  divEl.firstElementChild.value = 0;
+  size = 0;
 }
