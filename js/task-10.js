@@ -2,6 +2,7 @@ const boxes = document.querySelector("#boxes");
 const buttonCreate = document.querySelector("button[data-create]");
 const buttonDestroy = document.querySelector("button[data-destroy]");
 const divEl = document.querySelector("#controls");
+let amount;
 let size = 0;
 
 buttonCreate.addEventListener("click", createBoxes);
@@ -14,7 +15,7 @@ function getRandomHexColor() {
 }
 
 function createBoxes() {
-  let amount = divEl.firstElementChild.value;
+  amount = divEl.firstElementChild.value;
   size = 30;
   for (let i = 1; i <= amount; i += 1) {
     let color = getRandomHexColor();
@@ -28,7 +29,6 @@ function createBoxes() {
 }
 
 function destroyBoxes() {
-  let amount = divEl.firstElementChild.value;
   if (size === 0) {
     alert("Creat squares");
     return;
