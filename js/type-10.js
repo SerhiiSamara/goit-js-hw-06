@@ -3,16 +3,11 @@ const buttonCreate = document.querySelector("button[data-create]");
 const buttonDestroy = document.querySelector("button[data-destroy]");
 const div = document.querySelector("#controls");
 const textInput = div.firstElementChild;
-let amount;
+let amount = div.firstElementChild.target.value;
 let size = 0;
 
 buttonCreate.addEventListener("click", createBoxes);
 buttonDestroy.addEventListener("click", destroyBoxes);
-textInput.addEventListener("input", numberDiv);
-
-function numberDiv(event) {
-  amount = event.currentTarget.value;
-}
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
