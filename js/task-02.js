@@ -6,6 +6,7 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+
 const arrTag = ingredients.map((ingredient) => {
   const liItem = document.createElement("li");
   liItem.textContent = ingredient;
