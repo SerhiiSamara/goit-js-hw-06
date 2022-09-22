@@ -1,7 +1,11 @@
-ul {
+.gallery {
   display: flex;
   flex-direction: column;
   list-style: none;
+}
+
+.gallery .item {
+  margin-bottom: 20px;
 }
 
 .item {
