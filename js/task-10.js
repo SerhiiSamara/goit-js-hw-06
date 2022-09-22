@@ -34,9 +34,5 @@ function destroyBoxes() {
     return;
   }
 
-  for (let i = amount; i > 0; i -= 1) {
-    const elementDiv = document.querySelector(`.element${i}`);
-    elementDiv.remove();
-  }
-  size = 0;
+  boxes.innerHTML = "";
 }
